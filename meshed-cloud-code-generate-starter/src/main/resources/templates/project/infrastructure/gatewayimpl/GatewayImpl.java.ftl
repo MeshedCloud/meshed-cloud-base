@@ -6,7 +6,7 @@ import ${classPackage}.${domainName}.dto.query.${Class}ListQry;
 import ${classPackage}.${domainName}.dto.vo.${Class}VO;
 import ${classPackage}.${domainName}.gateway.${Class}Gateway;
 import ${classPackage}.${domainName}.gatewayimpl.database.dataobject.${Class};
-import cn.meshed.cloud.utils.CopyUtils;
+import CopyUtils;
 import cn.hutool.crypto.digest.DigestUtil;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import org.apache.commons.collections4.CollectionUtils;

@@ -1,6 +1,6 @@
 package ${classPackage}.${domainName}.serviceimpl;
 
-import cn.meshed.cloud.api.impl.ApiImpl;
+import ApiImpl;
 import ${classPackage}.${domainName}.api.${Class}Service;
 import ${classPackage}.${domainName}.dto.cmd.${Class}AddCmd;
 import ${classPackage}.${domainName}.dto.cmd.${Class}DelCmd;
@@ -11,7 +11,7 @@ import ${classPackage}.${domainName}.executor.${Class}DelCmdExe;
 import ${classPackage}.${domainName}.executor.${Class}UpdateCmdExe;
 import ${classPackage}.${domainName}.executor.query.${Class}ByIdQryExe;
 import ${classPackage}.${domainName}.executor.query.${Class}ListQryExe;
-import cn.meshed.cloud.utils.CopyUtils;
+import CopyUtils;
 import com.alibaba.cola.dto.Response;
 import com.alibaba.cola.dto.SingleResponse;
 import lombok.RequiredArgsConstructor;

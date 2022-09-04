@@ -1,6 +1,6 @@
 package ${classPackage}.${domainName}.executor;
 
-import cn.meshed.cloud.executor.AddCmdExe;
+import AddCmdExe;
 import ${classPackage}.${domainName}.dto.cmd.${Class}AddCmd;
 import ${classPackage}.${domainName}.dto.vo.${Class}VO;
 import ${classPackage}.${domainName}.gateway.${Class}Gateway;

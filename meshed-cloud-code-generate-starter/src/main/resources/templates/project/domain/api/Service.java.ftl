@@ -1,6 +1,6 @@
 package ${classPackage}.${domainName}.api;
 
-import cn.meshed.cloud.api.IApi;
+import IApi;
 import ${classPackage}.${domainName}.dto.cmd.${Class}AddCmd;
 import ${classPackage}.${domainName}.dto.cmd.${Class}DelCmd;
 import ${classPackage}.${domainName}.dto.query.${Class}ByIdQry;

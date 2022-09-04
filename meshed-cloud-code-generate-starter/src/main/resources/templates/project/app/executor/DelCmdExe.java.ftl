@@ -1,6 +1,6 @@
 package ${classPackage}.${domainName}.executor;
 
-import cn.meshed.cloud.executor.DeleteCmdExe;
+import DeleteCmdExe;
 import ${classPackage}.${domainName}.dto.cmd.${Class}DelCmd;
 import ${classPackage}.${domainName}.gateway.${Class}Gateway;
 import lombok.RequiredArgsConstructor;

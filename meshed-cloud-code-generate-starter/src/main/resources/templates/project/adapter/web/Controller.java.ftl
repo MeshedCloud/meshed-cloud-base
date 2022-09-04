@@ -5,7 +5,7 @@ import ${classPackage}.${domainName}.dto.cmd.${Class}AddCmd;
 import ${classPackage}.${domainName}.dto.cmd.${Class}DelCmd;
 import ${classPackage}.${domainName}.dto.query.${Class}ByIdQry;
 import ${classPackage}.${domainName}.dto.query.${Class}ListQry;
-import cn.meshed.cloud.resources.web.annotations.RestApi;
+import RestApi;
 import com.alibaba.cola.dto.Response;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

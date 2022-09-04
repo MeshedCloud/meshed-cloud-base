@@ -1,6 +1,6 @@
 package ${classPackage}.${domainName}.executor.query;
 
-import cn.meshed.cloud.executor.query.GetOneCmdExe;
+import GetOneCmdExe;
 import ${classPackage}.${domainName}.dto.query.${Class}ByIdQry;
 import ${classPackage}.${domainName}.dto.vo.${Class}VO;
 import ${classPackage}.${domainName}.gateway.${Class}Gateway;

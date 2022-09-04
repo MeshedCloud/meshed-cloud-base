@@ -1,6 +1,6 @@
 package ${classPackage}.${domainName}.executor.query;
 
-import cn.meshed.cloud.executor.query.PageListCmdExe;
+import PageListCmdExe;
 import ${classPackage}.${domainName}.dto.query.${Class}ListQry;
 import ${classPackage}.${domainName}.dto.vo.${Class}VO;
 import ${classPackage}.${domainName}.gateway.${Class}Gateway;

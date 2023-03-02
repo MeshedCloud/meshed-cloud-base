@@ -9,7 +9,7 @@
         <relativePath />
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
+    <groupId>cn.meshed.cloud</groupId>
     <artifactId>meshed-cloud-common</artifactId>
 
     <properties>
@@ -33,19 +33,14 @@
         <commons.collections4.version>4.4</commons.collections4.version>
         <!-- hutool-all 依赖 -->
         <hutool-all.version>5.8.6</hutool-all.version>
-        <meshed-cloud-constant-starter.version>1.0.0-SNAPSHOT</meshed-cloud-constant-starter.version>
-        <meshed-cloud-core-starter.version>1.0.0-SNAPSHOT</meshed-cloud-core-starter.version>
+        <meshed-cloud-dto.version>1.0.0-SNAPSHOT</meshed-cloud-dto.version>
     </properties>
 
     <dependencies>
         <dependency>
-            <groupId>cn.meshed.base</groupId>
-            <artifactId>meshed-cloud-constant-starter</artifactId>
-            <version>${meshed-cloud-constant-starter.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.alibaba.cola</groupId>
-            <artifactId>cola-component-dto</artifactId>
+            <groupId>cn.meshed.cloud</groupId>
+            <artifactId>meshed-cloud-dto</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba.cola</groupId>

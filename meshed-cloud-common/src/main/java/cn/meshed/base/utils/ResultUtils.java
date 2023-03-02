@@ -41,7 +41,7 @@ public class ResultUtils {
             return fail("400","失败");
         } else if (response instanceof TipResponse) {
             int showType = ((TipResponse<?>) response).getShowType();
-            return fail(response.getErrCode(),response.getErrMessage(),ShowType.of(showType));
+            return fail(response.getErrCode(),response.getErrMessage(), ShowType.of(showType));
         } else {
             return fail(response.getErrCode(),response.getErrMessage());
         }

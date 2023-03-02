@@ -19,7 +19,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.deploy.skip>true</maven.deploy.skip>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
-        <meshed-cloud-constant-starter.version>1.0.0-SNAPSHOT</meshed-cloud-constant-starter.version>
+        <meshed-cloud-constant.version>1.0.0-SNAPSHOT</meshed-cloud-constant.version>
     </properties>
     <dependencies>
         <dependency>
@@ -27,9 +27,9 @@
             <artifactId>cola-component-dto</artifactId>
         </dependency>
         <dependency>
-            <groupId>cn.meshed.base</groupId>
-            <artifactId>meshed-cloud-constant-starter</artifactId>
-            <version>${meshed-cloud-constant-starter.version}</version>
+            <groupId>cn.meshed.cloud</groupId>
+            <artifactId>meshed-cloud-constant</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

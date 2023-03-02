@@ -5,6 +5,10 @@
 
 **基础依赖管理工程**
 
+推送制品库
+```shell
+mvn clean install org.apache.maven.plugins:maven-deploy-plugin:2.8:deploy -DskipTests
+```
 
 ## 软件依赖
 

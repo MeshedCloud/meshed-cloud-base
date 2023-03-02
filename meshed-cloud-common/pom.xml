@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>meshed-base-parent</artifactId>
+        <groupId>cn.meshed.base</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+        <relativePath />
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>meshed-cloud-common</artifactId>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.deploy.skip>true</maven.deploy.skip>
+        <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <guava.version>31.1-jre</guava.version>
+        <!--
+             通用依赖
+         -->
+        <!--  lombok依赖 -->
+        <lombok.version>1.18.22</lombok.version>
+        <!-- commons-lang3 依赖 -->
+        <commons.lang3.version>3.12.0</commons.lang3.version>
+        <!-- commons-collections4 依赖 -->
+        <commons.collections4.version>4.4</commons.collections4.version>
+        <!-- hutool-all 依赖 -->
+        <hutool-all.version>5.8.6</hutool-all.version>
+        <meshed-cloud-constant-starter.version>1.0.0-SNAPSHOT</meshed-cloud-constant-starter.version>
+        <meshed-cloud-core-starter.version>1.0.0-SNAPSHOT</meshed-cloud-core-starter.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.meshed.base</groupId>
+            <artifactId>meshed-cloud-constant-starter</artifactId>
+            <version>${meshed-cloud-constant-starter.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cola</groupId>
+            <artifactId>cola-component-dto</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cola</groupId>
+            <artifactId>cola-component-exception</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>${commons.collections4.version}</version>
+        </dependency>
+        <!-- commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons.lang3.version}</version>
+        </dependency>
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool-all.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+            <version>5.3.23</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- Source attach plugin -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${maven-source-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

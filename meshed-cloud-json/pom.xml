@@ -4,12 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>meshed-base-parent</artifactId>
-        <groupId>cn.meshed.base</groupId>
-        <version>1.0.0-SNAPSHOT</version>
+        <groupId>cn.meshed.cloud</groupId>
+        <version>1.0.0</version>
         <relativePath />
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>cn.meshed.cloud</groupId>
+    <version>1.0.0-SNAPSHOT</version>
     <artifactId>meshed-cloud-json</artifactId>
 
     <properties>
@@ -17,7 +17,6 @@
         <maven.compiler.target>${maven.compiler.source}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <maven.deploy.skip>true</maven.deploy.skip>
         <maven-source-plugin.version>3.2.1</maven-source-plugin.version>
     </properties>
 

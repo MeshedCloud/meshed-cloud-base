@@ -1,5 +1,6 @@
 package cn.meshed.cloud.utils;
 
+import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.BeanUtils;
 
 import java.util.ArrayList;
@@ -40,6 +41,9 @@ public class CopyUtils extends BeanUtils {
     }
 
     public static <S, T> List<T> copyListProperties(Collection<S> sources, Supplier<T> target) {
+        if (CollectionUtils.isEmpty(sources)) {
+            return Collections.emptyList();
+        }
         return copyListProperties(sources, target, null);
     }
 
@@ -49,6 +53,9 @@ public class CopyUtils extends BeanUtils {
      * S: 数据源类 ，T: 目标类::new(eg: AdminVo::new)
      */
     public static <S, T> List<T> copyListProperties(Collection<S> sources, Supplier<T> target, CopyUtilsCallBack<S, T> callBack) {
+        if (CollectionUtils.isEmpty(sources)) {
+            return Collections.emptyList();
+        }
         List<T> list = new ArrayList<>(sources.size());
         for (S source : sources) {
             T t = target.get();
@@ -63,6 +70,9 @@ public class CopyUtils extends BeanUtils {
     }
 
     public static <S, T> Set<T> copySetProperties(Collection<S> sources, Supplier<T> target) {
+        if (CollectionUtils.isEmpty(sources)) {
+            return Collections.emptySet();
+        }
         return copySetProperties(sources, target, null);
     }
 
@@ -72,6 +82,9 @@ public class CopyUtils extends BeanUtils {
      * S: 数据源类 ，T: 目标类::new(eg: AdminVo::new)
      */
     public static <S, T> Set<T> copySetProperties(Collection<S> sources, Supplier<T> target, CopyUtilsCallBack<S, T> callBack) {
+        if (CollectionUtils.isEmpty(sources)) {
+            return Collections.emptySet();
+        }
         Set<T> sets = new HashSet<>(sources.size());
         for (S source : sources) {
             T t = target.get();
@@ -88,20 +101,18 @@ public class CopyUtils extends BeanUtils {
     /**
      * 复制list
      *
-     * @param source
-     * @param target
-     * @param <T>
-     * @param <K>
-     * @return
+     * @param sources 原列表
+     * @param target  目标类型
+     * @param <T>     原列表类型
+     * @param <K>     目标类型
+     * @return 复制的列表
      */
-    public static <T, K> List<K> copyListProperties(Collection<T> source, Class<K> target) {
-
-        if (null == source || source.isEmpty()) {
+    public static <T, K> List<K> copyListProperties(Collection<T> sources, Class<K> target) {
+        if (CollectionUtils.isEmpty(sources)) {
             return Collections.emptyList();
         }
-        return source.stream().map(e -> copy(e, target)).collect(Collectors.toList());
+        return sources.stream().map(e -> copy(e, target)).collect(Collectors.toList());
     }
-
 
 
 }

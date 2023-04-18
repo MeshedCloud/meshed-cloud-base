@@ -2,6 +2,7 @@ package cn.meshed.cloud.utils;
 
 import cn.meshed.cloud.dto.ShowType;
 import cn.meshed.cloud.dto.TipResponse;
+import com.alibaba.cola.dto.MultiResponse;
 import com.alibaba.cola.dto.PageResponse;
 import com.alibaba.cola.dto.Response;
 import com.alibaba.cola.dto.SingleResponse;
@@ -138,6 +139,9 @@ public class ResultUtils {
         return of(CopyUtils.copySetProperties(sources, target));
     }
 
+    public static <S, T> MultiResponse<T> copyMulti(Collection<S> sources, Supplier<T> target) {
+        return MultiResponse.of(CopyUtils.copyListProperties(sources, target));
+    }
 
     public static <S, T> PageResponse<T> copyPage(PageResponse<S> sources, Supplier<T> target) {
         if (sources == null) {

@@ -10,6 +10,7 @@ public interface ISave<C,R> {
 
     /**
      * <h1>保存对象</h1>
+     *
      * @param  {@link C}
      * @return {@link R}
      */

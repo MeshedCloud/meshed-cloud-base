@@ -6,13 +6,14 @@ package cn.meshed.cloud.core;
  * @author Vincent Vic
  * @version 1.0
  */
-public interface IQuery<C,R> {
+public interface IQuery<Q,R> {
 
     /**
-     * 查询
-     * @param cmd 参数
+     * <h2>查询</h2>
+     *
+     * @param qyr 查询参数
      * @return {@link R}
      */
-    R query(C cmd);
+    R query(Q qyr);
 
 }

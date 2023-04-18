@@ -9,9 +9,9 @@ package cn.meshed.cloud.core;
 public interface IPageList<P,R> {
 
     /**
-     * <h1>分页搜索</h1>
-     * @param   {@link P} 命令
+     * <h1>分页列表</h1>
+     * @param pageQry 分页查询 {@link P}
      * @return {@link R}
      */
-    R searchPageList(P param);
+    R searchPageList(P pageQry);
 }

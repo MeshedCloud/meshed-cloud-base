@@ -57,6 +57,11 @@ public class ResultUtils {
         return of(data, ShowType.NOTIFICATION);
     }
 
+
+    public static <T> SingleResponse of(Boolean condition) {
+        return of(condition, "操作失败");
+    }
+
     public static <T> SingleResponse of(Boolean condition, String errMsg) {
         if (condition) {
             return SingleResponse.buildSuccess();
